@@ -2,13 +2,15 @@ package classProblemByAmolMateSir.Day13PracticeProblem.demo;
 
 public class CheckMaximum <E>{
     public static void main(String[] args) {
-        MaxInteger<Integer> ingergerFind = new MaxInteger<>();
-        ingergerFind.checkMax(22,55,25);
+        MaxGeneric<Integer> ingergerFind = new MaxGeneric<>();
+        ingergerFind.check(22,55,25,55);
 
-        MaxFloate<Float> maxFloate = new MaxFloate<>();
-        maxFloate.check((float) 2.2,(float) 3.3,(float) 5.5);
+        MaxGeneric<Float> maxFloate = new MaxGeneric();
+        maxFloate.check((float) 2.2,(float) 3.3,(float) 5.5, (float) 50);
 
-        MaxString<String> maxString = new MaxString<>();
-        maxString.check("mayur","sai","anand");
+        MaxGeneric<String> maxString = new MaxGeneric();
+        maxString.check("mayur","sai","anand", "mahan");
+
+
     }
 }
